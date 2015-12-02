@@ -1,0 +1,97 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>waterfall-grid Demo</title>
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../waterfall-grid.html">
+    <link rel="import" href="../../paper-card/paper-card.html">
+    <style is="custom-style">
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+
+      waterfall-grid {
+        margin: 4px;
+      }
+
+      paper-card {
+        width: 240px;
+        margin: 4px;
+      }
+    </style>
+  </head>
+  <body unresolved>
+
+    <p>An example of <code>&lt;waterfall-grid&gt;</code>:</p>
+
+    <template id="demo" is="dom-bind">
+      <waterfall-grid>
+        <template id="items" is="dom-repeat" items="{{items}}">
+          <paper-card heading="{{item.title}}" elevation="1">
+            <div class="card-content">{{item.text}}</div>
+          </paper-card>
+        </template>
+      </waterfall-grid>
+    </template>
+
+    <script>
+      var demo = document.querySelector('#demo');
+
+      demo.items = [{
+        title: 'Item 1',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lobortis scelerisque massa, sagittis rutrum mauris molestie sit amet. Suspendisse consequat tincidunt accumsan. Praesent sapien nibh, facilisis vel augue sed, lacinia varius urna.'
+      }, {
+        title: 'Item 2',
+        text: 'Praesent bibendum egestas dui, id fermentum ipsum accumsan eget. Morbi eget erat vel felis luctus iaculis. Sed augue nisl, placerat non tortor ut.'
+      }, {
+        title: 'Item 3',
+        text: 'Pellentesque rutrum, sapien at semper posuere, dui urna consequat nulla, eu vestibulum leo elit vitae justo.'
+      }, {
+        title: 'Item 4',
+        text: 'Fusce scelerisque maximus condimentum. Nunc venenatis ac arcu et viverra. Vestibulum vitae sagittis sem, eu venenatis eros. Praesent nec sem urna.'
+      }, {
+        title: 'Item 5',
+        text: 'Sed commodo velit non arcu rhoncus pretium condimentum nec sem.'
+      }, {
+        title: 'Item 6',
+        text: 'Sed ultrices orci nisi, ac scelerisque risus eleifend ornare. Suspendisse in finibus tellus. Phasellus vulputate accumsan est vitae sodales. Fusce eu gravida turpis, sit amet suscipit mauris. Etiam at venenatis felis. Sed neque ante, vestibulum quis bibendum vel, facilisis eget est. Proin semper, ligula id cursus accumsan, enim quam rhoncus ex, eu sodales nibh erat eu neque.'
+      }, {
+        title: 'Item 7',
+        text: 'Fusce quis ligula ac nulla feugiat ornare.'
+      }, {
+        title: 'Item 8',
+        text: 'Cras dictum cursus nisl, sed efficitur dolor accumsan sed. Suspendisse pharetra quis velit id tempus. Proin eget orci vitae magna interdum rutrum eu ac dui. Donec eu lectus ligula. Morbi mattis imperdiet mi nec porttitor.'
+      }, {
+        title: 'Item 9',
+        text: 'Etiam velit ipsum, finibus sit amet pharetra id, faucibus congue est. Praesent ut ornare augue. Ut at gravida quam. Donec facilisis posuere sodales. Vestibulum vel nisi sit amet libero finibus dictum sit amet et turpis. Suspendisse ornare leo non sapien ultricies cursus.'
+      }, {
+        title: 'Item 10',
+        text: 'Pellentesque ut nulla nunc. Etiam facilisis luctus sem sed rutrum. Duis vitae tortor non nibh euismod viverra et sed felis.'
+      }, {
+        title: 'Item 11',
+        text: 'Proin neque nisi, laoreet at feugiat sit amet, volutpat et mi. Cras urna ligula, sodales vitae nisl quis, tempor tempor magna. Ut convallis ut velit quis ultricies.'
+      }, {
+        title: 'Item 12',
+        text: 'Fusce quis ligula ac nulla feugiat ornare. Cras dictum cursus nisl, sed efficitur dolor accumsan sed. Suspendisse pharetra quis velit id tempus. Proin eget orci vitae magna interdum rutrum eu ac dui. Donec eu lectus ligula. Morbi mattis imperdiet mi nec porttitor. Etiam velit ipsum, finibus sit amet pharetra id, faucibus congue est. Praesent ut ornare augue. Ut at gravida quam. Donec facilisis posuere sodales. Vestibulum vel nisi sit amet libero finibus dictum sit amet et turpis. Suspendisse ornare leo non sapien ultricies cursus. Pellentesque ut nulla nunc. Etiam facilisis luctus sem sed rutrum. Duis vitae tortor non nibh euismod viverra et sed felis.'
+      }, {
+        title: 'Item 13',
+        text: 'Sed ultrices orci nisi, ac scelerisque risus eleifend ornare. Suspendisse in finibus tellus. Phasellus vulputate accumsan est vitae sodales. Fusce eu gravida turpis, sit amet suscipit mauris. Etiam at venenatis felis. Sed neque ante, vestibulum quis bibendum vel, facilisis eget est.'
+      }, {
+        title: 'Item 14',
+        text: 'Pellentesque ut nulla nunc. Etiam facilisis luctus sem sed rutrum. Duis vitae tortor non nibh euismod viverra et sed felis.'
+      }];
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "waterfall",
+  "homepage": "https://github.com/raphamorim/waterfall.js",
+  "version": "1.0.0",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.0",
+    "commit": "0a898c2c4b1f5186c5dc8db5c0cfc9556f5ec595"
+  },
+  "_source": "git://github.com/raphamorim/waterfall.js.git",
+  "_target": "~1.0.0",
+  "_originalSource": "waterfall"
+}
