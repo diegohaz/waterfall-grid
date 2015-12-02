@@ -1,27 +1,30 @@
 {
   "name": "waterfall-grid",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "authors": [
-    "Anonymous <anonymous@example.com>"
+    "Diego Haz <hazdiego@gmail.com>"
   ],
-  "description": "An element providing a solution to no problem in particular.",
+  "description": "A Polymer wrapper element for waterfall.js, a 1KB Javascript library for Pinterest-like grids.",
   "keywords": [
+    "web-components",
     "web-component",
     "polymer",
     "seed"
   ],
   "main": "waterfall-grid.html",
   "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "homepage": "https://github.com/diegohaz/waterfall-grid/",
   "ignore": [
     "/.*",
     "/test/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.1.0"
+    "polymer": "Polymer/polymer#^1.1.0",
+    "waterfall": "~1.0.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
-    "web-component-tester": "*"
+    "web-component-tester": "*",
+    "paper-card": "PolymerElements/paper-card#~1.0.8"
   }
 }
