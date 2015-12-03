@@ -6,10 +6,15 @@
   ],
   "description": "A Polymer wrapper element for waterfall.js, a 1KB Javascript library for Pinterest-like grids.",
   "keywords": [
+    "list",
+    "grid",
+    "pinterest",
+    "waterfall",
     "web-components",
     "web-component",
-    "polymer",
-    "seed"
+    "web component",
+    "web components",
+    "polymer"
   ],
   "main": "waterfall-grid.html",
   "license": "http://polymer.github.io/LICENSE.txt",
