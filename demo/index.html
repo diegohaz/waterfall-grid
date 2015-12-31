@@ -37,9 +37,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <template id="demo" is="dom-bind">
       <waterfall-grid>
-        <template id="items" is="dom-repeat" items="{{items}}">
-          <paper-card heading="{{item.title}}" elevation="1">
-            <div class="card-content">{{item.text}}</div>
+        <template id="items" is="dom-repeat" items="[[items]]">
+          <paper-card heading="[[item.title]]">
+            <div class="card-content">[[item.text]]</div>
           </paper-card>
         </template>
       </waterfall-grid>
