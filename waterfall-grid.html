@@ -23,9 +23,9 @@ Basic example:
 Advanced example (using dom-repeat and paper-cards):
 
     <waterfall-grid>
-      <template is="dom-repeat" items="{{items}}">
-        <paper-card heading="{{item.title}}">
-          <div class="card-content">{{item.text}}</div>
+      <template is="dom-repeat" items="[[items]]">
+        <paper-card heading="[[item.title]]">
+          <div class="card-content">[[item.text]]</div>
         </paper-card>
       </template>
     </waterfall-grid>
